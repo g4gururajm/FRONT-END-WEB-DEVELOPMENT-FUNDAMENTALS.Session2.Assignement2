@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Box</title>
+</head>
+
+<body>
+<div style="background-color:#393939;padding:20px;"></div><br />
+  <form action="http://www.example.com/review.php" method="get">
+    <fieldset>
+      <legend>Your Details:</legend>
+      <label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
+      <label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
+    </fieldset><br />
+  </form>
+
+  <form action="http://www.example.com/review.php" method="get">
+    <fieldset>
+      <legend>Your Review:</legend><br>
+      <label>How did you hear about us?: <select name="Google">
+  <option value="Google">Google</option>
+  <option value="facebook">facebook</option>
+  <option value="LinkedIn">LinkedIn</option>
+  <option value="twitter">Twitter</option>
+  </select> </label><br/><br/>
+      <label>Would you visit again?<br> 
+        <input type="radio" name="option" value="Yes" > Yes
+        <input type="radio" name="option" value="No"> No
+        <input type="radio" name="option" value="Maybe"> Maybe
+      </label>
+    <br><br>
+     <label>Comments: <br> 
+        <textarea rows="10" cols="50" name="comment" form="usrform">
+        Enter text here...</textarea>
+      <br>
+      </label>
+      <label><br>
+       <input type="checkbox" name="vehicle" value="Sign" checked >Sign Me up for email updates<br></label> 
+       <input type="submit" value="Submit review">
+
+    </fieldset><br />
+  </form>
+</body>
+</html>
